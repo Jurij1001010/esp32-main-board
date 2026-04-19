@@ -3,7 +3,7 @@
 Smart Compass is a GPS-enhanced compass that lets you save locations with one tap.  
 Its analog dial then guides you back, always pointing directly toward your chosen destination—simple, intuitive navigation without maps.
 
-<img width="1536" height="2048" alt="Smart Compass photo" src="https://github.com/user-attachments/assets/339ed4bb-7324-45f3-a3b5-d58144e8dfaf" />
+<img alt="Smart Compass photo" src="https://github.com/user-attachments/assets/339ed4bb-7324-45f3-a3b5-d58144e8dfaf" />
 
 ## Project Overview
 
@@ -27,7 +27,7 @@ The project is configured as a **PlatformIO** project (Arduino framework).
 
 - ESP32 main board
 - GPS module (UART/NMEA output)
-- Compass / IMU module (I2C magnetometer support)
+- Compass/IMU module (I2C magnetometer support)
 - Compatible TFT display
 - Push button (for save-location action)
 
@@ -37,7 +37,7 @@ The project is configured as a **PlatformIO** project (Arduino framework).
 
 This repository includes `platformio.ini`, so the primary build flow is PlatformIO.
 
-1. Install [PlatformIO Core](https://docs.platformio.org/).
+1. Install [PlatformIO Core](https://docs.platformio.org/en/latest/core/installation/index.html).
 2. From the repository root, build:
 
 ```bash
@@ -71,9 +71,9 @@ If your board/port differs from defaults, configure the environment in `platform
 ## Configuration
 
 Common configuration points are in source files under `src/`, including:
-- board/button behavior and timing constants (`src/main.cpp`)
-- GPS serial and pin configuration (`src/gps.cpp`)
-- compass calibration/tuning constants (`src/compass.cpp`)
+- main application behavior and timing constants
+- GPS serial and pin configuration
+- compass calibration/tuning constants
 
 Adjust these values for your board revision and sensor orientation.
 
